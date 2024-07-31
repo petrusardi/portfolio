@@ -8,7 +8,7 @@ const About = () => {
       href="https://drive.google.com/file/d/18QotHjVMZnzdAcXN_wz3ujEPlZzntWvK/view?usp=sharing"
       target="_blank"
       rel="noopener noreferrer"
-      className="text-blue-700 hover:underline"
+      className="text-blue-500 hover:underline"
     >
       Transcript
     </a>
@@ -18,7 +18,7 @@ const About = () => {
       href="https://drive.google.com/file/d/1f1aOQkbxCRKqDEVhiYE9DfSDUxNQHs1e/view?usp=sharing"
       target="_blank"
       rel="noopener noreferrer"
-      className="text-blue-700 hover:underline"
+      className="text-blue-500 hover:underline"
     >
       Certificate
     </a>
@@ -28,13 +28,18 @@ const About = () => {
       href="https://drive.google.com/drive/folders/16bgMI9zBJWg---2dV1M_NNu-ZKYVti7p?usp=sharing"
       target="_blank"
       rel="noopener noreferrer"
-      className="text-blue-700 hover:underline"
+      className="text-blue-500 hover:underline"
     >
       ( Certificate )
     </a>
   );
+
   return (
-    <section className="bg-gray-100 text-gray-800 py-16">
+    <section className="relative overflow-hidden bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 text-gray-200 py-16">
+      <div
+        className="absolute top-0 left-0 w-full h-full bg-fixed bg-pattern opacity-20"
+        style={{ backgroundImage: "url('/path/to/your/pattern-image.png')" }}
+      ></div>
       <div className="container mx-auto px-6">
         <div className="flex flex-col lg:flex-row items-center">
           <motion.div

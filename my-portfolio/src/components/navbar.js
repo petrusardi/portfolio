@@ -35,9 +35,6 @@ const Navbar = () => {
           Contact
         </Link>
       </div>
-      <button onClick={toggleTheme} className="mt-auto mb-4">
-        {theme === "light" ? <FaMoon /> : <FaSun />}
-      </button>
     </nav>
   );
 };

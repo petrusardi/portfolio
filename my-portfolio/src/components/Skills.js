@@ -19,9 +19,9 @@ const skills = [
 
 const Skills = () => {
   return (
-    <section className="py-16 bg-gradient-to-r from-blue-50 to-indigo-50 text-gray-800">
+    <section className="relative overflow-hidden bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 text-gray-200 py-16">
       <div className="container mx-auto">
-        <h2 className="text-4xl font-extrabold mb-10 text-center text-indigo-600">
+        <h2 className="text-4xl font-extrabold mb-10 text-center text-white ">
           Skills
         </h2>
         <div className="grid gap-10 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 px-7">
