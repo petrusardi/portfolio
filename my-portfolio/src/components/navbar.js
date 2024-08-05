@@ -1,7 +1,6 @@
 // src/components/Navbar.js
 import React from "react";
 import { Link } from "react-router-dom";
-import { FaMoon, FaSun } from "react-icons/fa";
 import { useState, useEffect } from "react";
 
 const Navbar = () => {
@@ -11,10 +10,6 @@ const Navbar = () => {
     document.documentElement.setAttribute("data-theme", theme);
     localStorage.setItem("theme", theme);
   }, [theme]);
-
-  const toggleTheme = () => {
-    setTheme(theme === "light" ? "dark" : "light");
-  };
 
   return (
     <nav className="h-screen w-64 bg-gray-800 text-white flex flex-col items-center py-4 fixed">
