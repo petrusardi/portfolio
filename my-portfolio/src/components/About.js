@@ -1,4 +1,3 @@
-// src/components/About.js
 import React from "react";
 import { motion } from "framer-motion";
 
@@ -9,6 +8,7 @@ const About = () => {
       target="_blank"
       rel="noopener noreferrer"
       className="text-blue-500 hover:underline"
+      style={{ zIndex: 10 }}
     >
       Transcript
     </a>
@@ -19,6 +19,7 @@ const About = () => {
       target="_blank"
       rel="noopener noreferrer"
       className="text-blue-500 hover:underline"
+      style={{ zIndex: 10 }}
     >
       Certificate
     </a>
@@ -29,8 +30,9 @@ const About = () => {
       target="_blank"
       rel="noopener noreferrer"
       className="text-blue-500 hover:underline"
+      style={{ zIndex: 10 }}
     >
-      ( Certificate )
+      Certificate
     </a>
   );
 
@@ -52,14 +54,16 @@ const About = () => {
               src="Petrus_Arditama.jpg"
               alt="Petrus Arditama"
               className="rounded-lg shadow-lg"
+              style={{ zIndex: 1 }}
             />
           </motion.div>
-          <div className="lg:w-1/2 lg:pl-12">
+          <div className="lg:w-1/2 lg:pl-12" style={{ position: "relative" }}>
             <motion.h2
               className="text-4xl font-bold mb-4"
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.5 }}
+              style={{ zIndex: 5 }}
             >
               About Me
             </motion.h2>
@@ -68,6 +72,7 @@ const About = () => {
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.7 }}
+              style={{ zIndex: 5 }}
             >
               Hi, I'm Petrus Arditama, a passionate Full-Stack Developer with
               expertise in creating dynamic and responsive web applications.
@@ -82,6 +87,7 @@ const About = () => {
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 1 }}
+              style={{ zIndex: 5 }}
             >
               <h3 className="text-2xl font-bold mb-4">Educations</h3>
               <ul className="list-disc list-inside space-y-2">
@@ -89,13 +95,17 @@ const About = () => {
                   Hacktiv8 Indonesia ( February 2024 – June 2024 )
                 </li>
                 <h2>
-                  Full Stack Javascript Immersive Program ( {transcript} &{" "}
-                  {certifiedJS} )
+                  Full Stack Javascript Immersive Program (
+                  <span> {transcript} </span>&
+                  <span> {certifiedJS} </span>)
                 </h2>
                 <li className="font-bold">
                   Algoritma Data Science School ( July 2020 – October 2020 )
                 </li>
-                <h2>Full Stack Data Science Program {certifiedDS}</h2>
+                <h2>
+                  Full Stack Data Science Program
+                  <span> {certifiedDS} </span>
+                </h2>
                 <li className="font-bold">
                   Padjadjaran University ( June 2015 – December 2019 )
                 </li>
@@ -106,6 +116,7 @@ const About = () => {
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 1.3 }}
+              style={{ zIndex: 5 }}
             >
               <h3 className="text-2xl font-bold mb-4 mt-4">Work Experiences</h3>
               <ul className="list-disc list-inside space-y-2">

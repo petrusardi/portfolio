@@ -1,11 +1,12 @@
 // src/App.js
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Hero from "./components/hero";
-import Navbar from "./components/navbar";
 import Skills from "./components/Skills";
 import Contact from "./components/Contact";
 import About from "./components/About";
+import Portfolio from "./components/Portfolio";
+import Hero from "./components/hero";
+import Navbar from "./components/navbar";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
               <Route path="/" element={<Hero />} />
               <Route path="/about" element={<About />} />
               <Route path="/skills" element={<Skills />} />
+              <Route path="/portfolio" element={<Portfolio />} />
               <Route path="/contact" element={<Contact />} />
             </Routes>
           </main>
