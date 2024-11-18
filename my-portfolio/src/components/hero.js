@@ -1,17 +1,12 @@
 // src/components/Hero.js
 import React from "react";
-import { motion } from "framer-motion";
 import Typewriter from "react-typewriter-effect";
+import ThreeBackground from "./ThreeBackground";
 
 const Hero = () => {
   return (
-    <section className="relative h-screen flex items-center justify-center text-center font-roboto">
-      <motion.div
-        className="absolute inset-0 bg-gradient-to-r from-[#2b5876] to-[#4e4376]"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 2 }}
-      />
+    <section className="relative h-screen flex overflow-hidden items-center justify-center text-center font-roboto bg-black">
+      <ThreeBackground /> {/* Animasi di latar belakang */}
       <div className="relative z-10 text-white">
         <h1 className="text-5xl font-bold mb-4">Welcome to My Portfolio</h1>
         <div className="text-2xl">

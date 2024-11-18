@@ -4,22 +4,24 @@ import { motion } from "framer-motion";
 
 const projects = [
   {
-    name: "TIC-TAC-TIV App",
-    description:
-      "A web-based app for playing tic-tac-toe with integrated chat functionality to interact with your opponent during the game.",
-    techstack:
-      "Express JS, PostgreSQL, React, Tailwind CSS, Socket.io, AWS, Firebase",
-    videoLink: "",
-    githubLink: "https://github.com/Tim-7-GP-HCK70/GP-TIM-7",
-  },
-  {
     name: "Trading Card Game App",
     description:
       "A dynamic platform for trading card enthusiasts. Users can purchase and explore a wide range of trading cards, track card details, and manage their collection efficiently.",
     techstack:
       "TypeScript, MongoDB, Next.JS, tailwind, bycrpt, JsonWebToken, Vercel",
-    videoLink: "#",
+    videoLink:
+      "https://drive.google.com/file/d/1o-KGQdaVAZkc5EAKjEGb_fXU9BzIREJL/view?usp=sharing",
     githubLink: "https://github.com/petrusardi/TCG-WebClone",
+  },
+  {
+    name: "TIC-TAC-TIV App",
+    description:
+      "A web-based app for playing tic-tac-toe with integrated chat functionality to interact with your opponent during the game.",
+    techstack:
+      "Express JS, PostgreSQL, React, Tailwind CSS, Socket.io, AWS, Firebase",
+    videoLink:
+      "https://drive.google.com/file/d/1mRSvmUFpontWnEOO9rZBPa1uJK6RSwae/view?usp=sharing",
+    githubLink: "https://github.com/Tim-7-GP-HCK70/GP-TIM-7",
   },
   {
     name: "Wiki & E-Commerce App",
@@ -27,27 +29,24 @@ const projects = [
       "A web-based platform for exploring detailed information about Anime characters and E-commerce for purchasing action figures.",
     techstack:
       "Express JS, PostgreSQL, React, Tailwind CSS, Open AI, AWS, Firebase",
-    videoLink: "#",
+    videoLink:
+      "https://drive.google.com/file/d/1B043gLK6DrxoE6_bqva0wOFGnEEvilqu/view?usp=sharing",
     githubLink: "https://github.com/petrusardi/naruto-ecommerce-app",
-  },
-  {
-    name: "AgriMart App",
-    description:
-      "A web-based e-commerce app for buying and selling farm produce, providing fresh vegetables, fruits, and other agricultural products directly from farmers to consumers.",
-    techstack: "ReactJS, Express.js, PostgreSQL, HTML & CSS",
-    videoLink: "#",
-    githubLink: "https://github.com/petrusardi/AgriMart-pair-project",
   },
 ];
 
 const Portfolio = () => {
   return (
-    <section className="h-screen flex relative overflow-hidden bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 text-gray-200 py-16">
-      <div className="container mx-auto">
+    <section className="min-h-screen flex flex-col relative overflow-auto bg-black py-16">
+      <div
+        id="particles-js"
+        className="absolute top-0 left-0 w-full h-full"
+      ></div>
+      <div className="container mx-auto px-4 relative z-10">
         <h2 className="text-4xl font-extrabold mb-10 text-center text-white">
           Projects
         </h2>
-        <div className="grid gap-10 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 px-7">
+        <div className="grid gap-10 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
           {projects.map((project) => (
             <motion.div
               key={project.name}

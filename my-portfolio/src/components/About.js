@@ -37,7 +37,7 @@ const About = () => {
   );
 
   return (
-    <section className="relative overflow-hidden bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 text-gray-200 py-16">
+    <section className="relative overflow-hidden flex bg-black text-gray-200 py-16">
       <div
         className="absolute top-0 left-0 w-full h-full bg-fixed bg-pattern opacity-20"
         style={{ backgroundImage: "url('/path/to/your/pattern-image.png')" }}
@@ -53,8 +53,8 @@ const About = () => {
             <img
               src="Petrus_Arditama.jpg"
               alt="Petrus Arditama"
-              className="rounded-lg shadow-lg"
-              style={{ zIndex: 1 }}
+              className="rounded-lg shadow-lg object-cover w-full h-screen" // Menambahkan object-cover dan h-96
+              style={{ objectPosition: "center top" }}
             />
           </motion.div>
           <div className="lg:w-1/2 lg:pl-12" style={{ position: "relative" }}>
@@ -96,8 +96,7 @@ const About = () => {
                 </li>
                 <h2>
                   Full Stack Javascript Immersive Program (
-                  <span> {transcript} </span>&
-                  <span> {certifiedJS} </span>)
+                  <span> {transcript} </span>&<span> {certifiedJS} </span>)
                 </h2>
                 <li className="font-bold">
                   Algoritma Data Science School ( July 2020 – October 2020 )
@@ -120,6 +119,10 @@ const About = () => {
             >
               <h3 className="text-2xl font-bold mb-4 mt-4">Work Experiences</h3>
               <ul className="list-disc list-inside space-y-2">
+                <li>
+                  PT. Bringin Inti Teknologi as Back-End Developer Intern,
+                  <h2>September 2024 - now</h2>
+                </li>
                 <li>
                   FIFGROUP member of ASTRA as Area Marketing Support Officer,
                   <h2>August 2021 – January 2024</h2>
