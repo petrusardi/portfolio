@@ -4,6 +4,14 @@ import { motion } from "framer-motion";
 
 const projects = [
   {
+    name: "PMO Watch Tower",
+    description:
+      "Designed a system to track Total Project Cost (TPC), contract details (SPK), and categorized cash outflows. Enabled real-time analysis of budget usage to assess and improve allocation efficiency throughout project execution.",
+    techstack: "Go Language, PostgreSQL, React.JS, tailwind, JsonWebToken",
+    videoLink: "",
+    githubLink: "",
+  },
+  {
     name: "Trading Card Game App",
     description:
       "A dynamic platform for trading card enthusiasts. Users can purchase and explore a wide range of trading cards, track card details, and manage their collection efficiently.",

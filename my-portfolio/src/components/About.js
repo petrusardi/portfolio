@@ -120,7 +120,7 @@ const About = () => {
               <h3 className="text-2xl font-bold mb-4 mt-4">Work Experiences</h3>
               <ul className="list-disc list-inside space-y-2">
                 <li>
-                  PT. Bringin Inti Teknologi as Back-End Developer Intern,
+                  PT. Bringin Inti Teknologi as Full-Stack Developer Intern,
                   <h2>September 2024 - now</h2>
                 </li>
                 <li>
